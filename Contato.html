@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Página de Ajuda</title>
+    <style>
+        body {
+            background-color: rgb(181, 225, 255); /* Cor de fundo suave */
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        h1, h2, h3, h4, h5 {
+            text-align: center;
+            color: #003366;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+
+        h4 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        a {
+            color: #0077cc;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para a parte de contato */
+        .contact-info {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        /* Formulário de contato (opcional) */
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-form button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="http://127.0.0.1:5500/Gr%C3%AAmio%20(1).html" target="_blank">- Menu -</a>
+    </header>
+
+    <h1>Caso precise de ajuda, vá em</h1>
+    <div style="text-align: center;">
+        <a href="https://gremio.net/" target="_blank">Grêmio</a>
+    </div>
+
+    <div class="contact-info">
+        <h3>Para contato com o proprietário da página, envie um e-mail para:</h3>
+        <h4><a href="mailto:gabrielaresigaieski@gmail.com">gabrielaresigaieski@gmail.com</a></h4>
+    </div>
+
+    <!-- Formulário opcional -->
+    <div class="contact-form">
+        <form action="mailto:gabrielaresigaieski@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
+</body>
+</html>

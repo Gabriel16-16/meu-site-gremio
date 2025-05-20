@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Aresi Blog</title>
+  <style>
+    /* Definições gerais do site */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #b5e1ff; /* Cor de fundo suave */
+      padding: 0;
+      margin: 0;
+      color: #333;
+    }
+
+    /* Container do quiz */
+    .quiz-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 50px auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Título do quiz */
+    h1 {
+      color: #003366; /* Azul forte */
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    /* Estilo para cada pergunta */
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question p {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    /* Estilo para as opções de resposta */
+    label {
+      display: block;
+      margin: 8px 0;
+      padding: 5px;
+      font-size: 1.05em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    label:hover {
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+
+    /* Estilo do botão de envio */
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    /* Resultado final */
+    .result {
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-top: 20px;
+      color: #003366;
+      text-align: center;
+    }
+
+    /* Respostas erradas e certas com destaque */
+    .correct {
+      color: green;
+    }
+
+    .incorrect {
+      color: red;
+    }
+
+    /* Responsividade para dispositivos móveis */
+    @media (max-width: 600px) {
+      .quiz-container {
+        padding: 20px;
+        margin: 10px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .question p {
+        font-size: 1em;
+      }
+
+      button {
+        font-size: 1em;
+      }
+    }
+
+    /* Estilo para o título */
+    h1 {
+      color: #003366;
+    }
+
+    /* Estilo para o header */
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header a {
+      color: white;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="http://127.0.0.1:5500/Gr%C3%AAmio%20(1).html" target="_blank">- Menu -</a>
+  </header>
+
+  <div class="quiz-container">
+    <h1>Quiz: História do Grêmio</h1>
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Em que data o Grêmio foi fundado?</p>
+        <label><input type="radio" name="q1" value="b"> 15 de setembro de 1903</label><br>
+        <label><input type="radio" name="q1" value="a"> 7 de setembro de 1922</label><br>
+        <label><input type="radio" name="q1" value="c"> 1º de janeiro de 1910</label><br>
+        <label><input type="radio" name="q1" value="d"> 20 de abril de 1899</label>
+      </div>
+
+      <div class="question">
+        <p>2. Qual foi o primeiro campeonato que o Grêmio venceu?</p>
+        <label><input type="radio" name="q2" value="c"> Taça Wanderpreiss</label><br>
+        <label><input type="radio" name="q2" value="a"> Copa do Brasil</label><br>
+        <label><input type="radio" name="q2" value="b"> Campeonato Gaúcho</label><br>
+        <label><input type="radio" name="q2" value="d"> Série B</label>
+      </div>
+
+      <div class="question">
+        <p>3. Em que ano o Grêmio conquistou a Copa Libertadores e o Mundial?</p>
+        <label><input type="radio" name="q3" value="c"> 1983</label><br>
+        <label><input type="radio" name="q3" value="a"> 1995</label><br>
+        <label><input type="radio" name="q3" value="b"> 2017</label><br>
+        <label><input type="radio" name="q3" value="d"> 2005</label>
+      </div>
+
+      <div class="question">
+        <p>4. Quem era o atacante destaque nas finais de 1983?</p>
+        <label><input type="radio" name="q4" value="b"> Renato Gaúcho</label><br>
+        <label><input type="radio" name="q4" value="a"> Ronaldinho Gaúcho</label><br>
+        <label><input type="radio" name="q4" value="c"> Jardel</label><br>
+        <label><input type="radio" name="q4" value="d"> Luan</label>
+      </div>
+
+      <div class="question">
+        <p>5. Contra qual time aconteceu a “Batalha dos Aflitos” em 2005?</p>
+        <label><input type="radio" name="q5" value="c"> Náutico</label><br>
+        <label><input type="radio" name="q5" value="a"> Flamengo</label><br>
+        <label><input type="radio" name="q5" value="b"> São Paulo</label><br>
+        <label><input type="radio" name="q5" value="d"> Cruzeiro</label>
+      </div>
+
+      <div class="question">
+        <p>6. Quais são as cores oficiais do Grêmio?</p>
+        <label><input type="radio" name="q6" value="c"> Azul, preto e branco</label><br>
+        <label><input type="radio" name="q6" value="a"> Vermelho, preto e branco</label><br>
+        <label><input type="radio" name="q6" value="b"> Verde, amarelo e azul</label><br>
+        <label><input type="radio" name="q6" value="d"> Roxo, cinza e branco</label>
+      </div>
+
+      <button type="button" onclick="verificarRespostas()">Ver Resultado</button>
+      <p class="result" id="resultado"></p>
+    </form>
+  </div>
+
+  <script>
+    function verificarRespostas() {
+      const respostasCorretas = {
+        q1: 'b',
+        q2: 'c',
+        q3: 'c',
+        q4: 'b',
+        q5: 'c',
+        q6: 'c'
+      };
+
+      let pontuacao = 0;
+      for (let i = 1; i <= 6; i++) {
+        const resposta = document.querySelector(`input[name="q${i}"]:checked`);
+        if (resposta && resposta.value === respostasCorretas[`q${i}`]) {
+          pontuacao++;
+        }
+      }
+
+      document.getElementById('resultado').innerText = `Você acertou ${pontuacao} de 6 perguntas.`;
+    }
+  </script>
+         <footer style="background-color: #003366; color: white; padding: 10px 0; text-align: center; position: fixed; bottom: 0; width: 100%; z-index: 1000; font-size: 0.9em;">
+          <div>
+              <p style="margin: 0; font-size: 1em;">© 2025 Aresi Blog | Todos os direitos reservados.</p>
+              <div>
+                  <a href="http://127.0.0.1:5500/Contato.html" style="color: white; text-decoration: none; margin: 0 10px; font-size: 0.9em;">Contato</a>
+                  <a href="http://127.0.0.1:5500/Termos.html" style="color: white; text-decoration: none; margin: 0 10px; font-size: 0.9em;">Termos de Uso</a>
+                  <a href="http://127.0.0.1:5500/Privacidade.html" style="color: white; text-decoration: none; margin: 0 10px; font-size: 0.9em;">Política de Privacidade</a>
+              </div>
+              <div style="margin-top: 10px;">
+                  <a href="https://www.facebook.com" target="_blank" style="color: white; margin: 0 8px; font-size: 0.9em;">Facebook</a>
+                  <a href="https://www.twitter.com" target="_blank" style="color: white; margin: 0 8px; font-size: 0.9em;">Twitter</a>
+                  <a href="https://www.instagram.com" target="_blank" style="color: white; margin: 0 8px; font-size: 0.9em;">Instagram</a>
+                  <a href="https://www.youtube.com" target="_blank" style="color: white; margin: 0 8px; font-size: 0.9em;">YouTube</a>
+              </div>
+          </div>
+      </footer>
+</body>
+</html>

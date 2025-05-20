@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Aresi Blog" content="Grêmio">
+    <title>Aresi Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="gremio.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="gremio.jpg" type="image/x-icon">
+    <style>
+        /* Definições gerais do site */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgb(181, 225, 255);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            color: #003366;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        /* Títulos secundários */
+        h2, h3 {
+            color: #003366;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Estilo do parágrafo */
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+            margin: 20px 10%;
+            text-align: justify;
+        }
+
+        /* Estilo dos links */
+        a {
+            display: inline-block;
+            margin: 15px;
+            font-size: 1.1em;
+            color: #0077cc;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 2px solid #0077cc;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #0077cc;
+            color: white;
+        }
+
+        /* Estilo do iframe do vídeo */
+        iframe {
+            display: block;
+            margin: 30px auto;
+            border-radius: 10px;
+            border: none;
+        }
+
+        /* Estilo do rodapé */
+        h6 {
+            text-align: center;
+            font-size: 1em;
+            color: #666;
+            margin-top: 40px;
+        }
+
+        /* Estilo de links no rodapé */
+        h6 a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        h6 a:hover {
+            color: #005fa3;
+        }
+
+        /* Estilo da área de login e cadastro */
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #0077cc;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-form button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aresi Blog</h1>
+
+    <h2>História sobre o Grêmio</h2>
+    <h3>O Grêmio Foot-Ball Porto Alegrense foi fundado em 15 de setembro de 1903, em um restaurante da região central de Porto Alegre. A equipe venceu o primeiro campeonato que disputou, a Taça Wanderpreiss, em 1905 - que voltaria a ganhar em outras sete oportunidades. O Grêmio é, junto ao Cruzeiro, o maior campeão da história da Copa do Brasil (quatro taças). O ano de 1983 foi um dos mais marcantes da história da equipe, com as conquistas da Copa Libertadores e do Mundial, com o então atacante Renato Gaúcho tendo marcado os gols da vitória diante do Hamburgo, da Alemanha. Em 2005, no título da Série B, o time teve jogo histórico contra o Náutico, a "Batalha dos Aflitos".</h3>
+
+    <h2>Visão Geral</h2>
+    <h3>O Grêmio Foot-Ball Porto Alegrense, mais conhecido como Grêmio, é um clube de futebol profissional brasileiro sediado em Porto Alegre, no Rio Grande do Sul. Fundado em 15 de setembro de 1903, é considerado um dos maiores e mais tradicionais clubes do Brasil e da América do Sul. Suas cores são azul, preto e branco.</h3>
+
+    <div style="text-align: center;">
+        <a href="http://127.0.0.1:5500/Trofeus.html" target="_blank">Títulos e Trófeus</a>
+        <a href="http://127.0.0.1:5500/Jogadores.html" target="_blank">Jogadores Renomados</a>
+        <a href="http://127.0.0.1:5500/arena.html" target="_blank">Arena do Grêmio</a>
+        <a href="http://127.0.0.1:5500/Quiz.html" target="_blank">Quiz Interativo</a>
+    </div>
+
+    <h1>Vídeo Explicativo sobre a História do Grêmio (1903):</h1>
+    <iframe width="895" height="597" src="https://www.youtube.com/embed/4tWiCcoe8F8" title="Grêmio 1903 - A história do Grêmio [PFC]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Seção de Login -->
+    <div class="login-container">
+        <h2>Login de Acesso</h2>
+        <form action="#" method="post" class="login-form">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <!-- Seção de Cadastro -->
+    <div class="login-container">
+        <h2>Cadastro de Novo Usuário</h2>
+        <form action="#" method="post" class="login-form">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirmar Senha:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <footer style="background-color: #003366; color: white; padding: 10px 0; text-align: center; position: fixed; bottom: 0; width: 100%; z-index: 1000; font-size: 0.9em;">
+        <div>
+            <p style="margin: 0; font-size: 1em;">© 2025 Aresi Blog | Todos os direitos reservados.</p>
+            <div>
+                <a href="http://127.0.0.1:5500/Contato.html" style="color: white; text-decoration: none; margin: 0 10px; font-size: 0.9em;">Contato</a>
+                <a href="http://127.0.0.1:5500/Termos.html" style="color: white; text-decoration: none; margin: 0 10px; font-size: 0.9em;">Termos de Uso</a>
+                <a href="http://127.0.0.1:5500/Privacidade.html" style="color: white; text-decoration: none; margin: 0 10px; font-size: 0.9em;">Política de Privacidade</a>
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="https://www.facebook.com" target="_blank" style="color: white; margin: 0 8px; font-size: 0.9em;">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank" style="color: white; margin: 0 8px; font-size: 0.9em;">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank" style="color: white; margin: 0 8px; font-size: 0.9em;">Instagram</a>
+                <a href="https://www.youtube.com" target="_blank" style="color: white; margin: 0 8px; font-size: 0.9em;">YouTube</a>
+            </div>
+        </div>
+    </footer>
+    <h6>Feito por Gabriel Aresi. <br><a href="http://127.0.0.1:5500/Contato.html" target="_blank">Contato</a></h6>
+
+</body>
+</html>
